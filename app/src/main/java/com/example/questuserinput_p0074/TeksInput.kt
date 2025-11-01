@@ -54,6 +54,14 @@ fun FormulirPendaftaran(modifier: Modifier){
         color = Color(0xFFF6ECFF),
         modifier = Modifier.fillMaxSize()
     ){
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 53.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+        }
 
     }
 }
