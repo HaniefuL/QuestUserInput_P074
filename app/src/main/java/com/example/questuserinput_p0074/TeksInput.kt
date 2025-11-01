@@ -67,7 +67,14 @@ fun FormulirPendaftaran(modifier: Modifier){
                     .background(Color(0xFFB56BFF)) // warna ungu full tepi layar
                     .padding(vertical = paddingLarge)
             ){
-
+                Text(
+                    text = stringResource(R.string.FormulirPendaftaran),
+                    fontSize = dimensionResource(id = R.dimen.font_title).value.sp,
+                    color = Color.White,
+                    fontWeight = FontWeight.Bold,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier.fillMaxWidth()
+                )
             }
         }
 
