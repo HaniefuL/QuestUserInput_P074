@@ -145,6 +145,7 @@ fun FormulirPendaftaran(modifier: Modifier){
                         .fillMaxWidth()
                         .padding(vertical = paddingSmall)
                 )
+                Spacer(modifier = Modifier.height(paddingLarge))
             }
         }
 
