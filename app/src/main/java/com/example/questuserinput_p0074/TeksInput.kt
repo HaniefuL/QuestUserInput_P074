@@ -104,6 +104,20 @@ fun FormulirPendaftaran(modifier: Modifier){
                 )
 
                 Spacer(modifier = Modifier.height(paddingMedium))
+
+                Text("JENIS KELAMIN", fontWeight = FontWeight.Bold)
+                Spacer(modifier = Modifier.height(paddingSmall))
+                Column(verticalArrangement = Arrangement.spacedBy(paddingSmall)) {
+                    listOf("Laki-laki", "Perempuan").forEach { opsi ->
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            RadioButton(
+                                selected = jenisKelamin == opsi,
+                                onClick = { jenisKelamin = opsi }
+                            )
+                            Text(opsi)
+                        }
+                    }
+                }
             }
         }
 
