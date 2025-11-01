@@ -92,7 +92,18 @@ fun FormulirPendaftaran(modifier: Modifier){
                 modifier = Modifier
                     .padding(paddingMedium)
                     .fillMaxWidth()
-            ){}
+            ){
+                Text("NAMA LENGKAP", fontWeight = FontWeight.Bold)
+                OutlinedTextField(
+                    value = nama,
+                    onValueChange = { nama = it },
+                    placeholder = { Text("Isian nama lengkap") },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(vertical = paddingSmall)
+                )
+
+            }
         }
 
     }
