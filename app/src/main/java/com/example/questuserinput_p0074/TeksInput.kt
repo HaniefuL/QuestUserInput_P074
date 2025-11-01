@@ -103,6 +103,7 @@ fun FormulirPendaftaran(modifier: Modifier){
                         .padding(vertical = paddingSmall)
                 )
 
+                Spacer(modifier = Modifier.height(paddingMedium))
             }
         }
 
