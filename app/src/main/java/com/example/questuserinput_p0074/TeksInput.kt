@@ -146,6 +146,21 @@ fun FormulirPendaftaran(modifier: Modifier){
                         .padding(vertical = paddingSmall)
                 )
                 Spacer(modifier = Modifier.height(paddingLarge))
+
+                Button(
+                    onClick = { /* aksi submit */ },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF8A2BE2)),
+                    shape = RoundedCornerShape(50),
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(buttonHeight)
+                ) {
+                    Text(
+                        stringResource(R.string.Submit),
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
             }
         }
 
