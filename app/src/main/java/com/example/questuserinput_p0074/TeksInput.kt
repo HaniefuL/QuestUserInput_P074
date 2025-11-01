@@ -44,5 +44,10 @@ fun FormulirPendaftaran(modifier: Modifier){
     var alamat by remember { mutableStateOf(TextFieldValue("")) }
     var jenisKelamin by remember { mutableStateOf("") }
     var statusPerkawinan by remember { mutableStateOf("") }
+
+    val paddingSmall = dimensionResource(id = R.dimen.padding_small)
+    val paddingMedium = dimensionResource(id = R.dimen.padding_medium)
+    val paddingLarge = dimensionResource(id = R.dimen.padding_large)
+    val buttonHeight = dimensionResource(id = R.dimen.button_height)
 }
 
