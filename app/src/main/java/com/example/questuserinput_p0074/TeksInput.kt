@@ -118,6 +118,8 @@ fun FormulirPendaftaran(modifier: Modifier){
                         }
                     }
                 }
+
+                Spacer(modifier = Modifier.height(paddingMedium))
             }
         }
 
